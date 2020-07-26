@@ -13,18 +13,7 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 
-function Copyright() {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {'Copyright © '}
-      <Link color="inherit" href="https://material-ui.com/">
-        Your Website
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
+import Logo from "../components/Logo/index"
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -53,8 +42,14 @@ const useStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(1),
   },
   submit: {
+    backgroundColor: "#E72051",
+    // borderRadius: "50%",
+    // width: "300px  ",
     margin: theme.spacing(3, 0, 2),
   },
+  subtitle_logo: {
+    color: "#E72051"
+  }
 }));
 
 export default function SignInSide() {
@@ -63,14 +58,11 @@ export default function SignInSide() {
   return (
     <Grid container component="main" className={classes.root}>
       <CssBaseline />
-      <Grid item xs={false} sm={4} md={7} className={classes.image} />
-      <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
+      <Grid item xs={12} sm={8} md={6} component={Paper} elevation={6} square>
         <div className={classes.paper}>
-          <Avatar className={classes.avatar}>
-            <LockOutlinedIcon />
-          </Avatar>
-          <Typography component="h1" variant="h5">
-            Sign in
+          <Logo />
+          <Typography component="h1" variant="h5" className={classes.subtitle_logo}>
+            Faça o login para continuar
           </Typography>
           <form className={classes.form} noValidate>
             <TextField
@@ -106,7 +98,7 @@ export default function SignInSide() {
               color="primary"
               className={classes.submit}
             >
-              Sign In
+              Entrar
             </Button>
             <Grid container>
               <Grid item xs>
@@ -120,12 +112,10 @@ export default function SignInSide() {
                 </Link>
               </Grid>
             </Grid>
-            <Box mt={5}>
-              <Copyright />
-            </Box>
           </form>
         </div>
       </Grid>
+      <Grid item xs={false} sm={4} md={6} className={classes.image} />
     </Grid>
   );
 }
