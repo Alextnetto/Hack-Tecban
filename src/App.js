@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -17,7 +16,7 @@ function App() {
       <Switch>
         <Route path="/login" component={SignInSide} />
         <Route path="/">
-          <h1>Hello</h1>
+          <Link to="/login/" > Hello </Link>
         </Route>    
       </Switch>
     </Router>

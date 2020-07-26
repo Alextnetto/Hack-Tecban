@@ -20,7 +20,7 @@ const styles = themes => ({
 function Logo({classes}) {
 	return (
 			<div className = {classes.logoDiv}>
-					<img src={MySvg} className={classes.imgLogo} />
+					<img src={MySvg} className={classes.imgLogo} alt='logo'/>
 			</div>
 	)
 }
