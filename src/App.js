@@ -9,6 +9,7 @@ import {
 
 import './pages/login'
 import SignInSide from './pages/login';
+import HandlerHome from './pages/handleHomer'
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
       <Switch>
         <Route path="/login" component={SignInSide} />
         <Route path="/">
-          <Link to="/login/" > Hello </Link>
+          <HandlerHome />
         </Route>    
       </Switch>
     </Router>

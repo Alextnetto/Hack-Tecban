@@ -11,6 +11,8 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 
 import Logo from "../components/Logo/index"
+import { setUserStorage, getUserStorage, clearUserStorage } from "../utils/loginStorage"
+import { accountGetGrant } from "../utils/handlerAccountAPI"
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -30,6 +32,10 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'column',
     alignItems: 'center',
   },
+  avatar: {
+    margin: theme.spacing(1),
+    backgroundColor: theme.palette.secondary.main,
+  },
   form: {
     width: '100%', // Fix IE 11 issue.
     marginTop: theme.spacing(1),
@@ -45,6 +51,21 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
+const saveUser = async(event) => {
+  event.preventDefault()
+
+  const configsToSave = {
+    "email": event.target.email.value,
+    "password": event.target.password.value
+  }
+
+  setUserStorage(configsToSave)
+  console.log(configsToSave)
+  
+  const t = await accountGetGrant()
+  console.log(t)
+}
+
 export default function SignInSide() {
   const classes = useStyles();
 
@@ -57,7 +78,7 @@ export default function SignInSide() {
           <Typography component="h1" variant="h5" className={classes.subtitle_logo}>
             Faça o login para continuar
           </Typography>
-          <form className={classes.form} noValidate>
+          <form className={classes.form} noValidate onSubmit={saveUser}>
             <TextField
               variant="outlined"
               margin="normal"
