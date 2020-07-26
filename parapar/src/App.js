@@ -10,12 +10,14 @@ import {
 
 import './pages/login'
 import SignInSide from './pages/login';
+import MatchPage from "./pages/match_page"
 
 function App() {
   return (
     <Router>  
       <Switch>
         <Route path="/login" component={SignInSide} />
+        <Route path="/match" component={MatchPage} />
         <Route path="/">
           <h1>Hello</h1>
         </Route>    
