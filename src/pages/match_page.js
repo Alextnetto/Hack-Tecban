@@ -13,12 +13,6 @@ class MatchPage extends React.Component {
     };
   }
 
-  async componentDidMount() {
-    this.setState({
-      loading: data
-    })
-  }
- 
   render() {
     return (
       <>

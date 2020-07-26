@@ -1,9 +1,8 @@
 import React from "react";
-import {
-  Link
-} from "react-router-dom";
 
 import Loading from "../components/loading"
+import MatchPage from "./match_page"
+import HomePage from "./home"
 
 import { setUserStorage, getUserStorage, clearUserStorage } from "../utils/loginStorage"
 import { accountGetGrant } from "../utils/handlerAccountAPI"
@@ -17,12 +16,11 @@ class HandlerHome extends React.Component {
   }
  
   render() {
-    console.log(this.state.urlCode)
     return (
       <>
         {
         document.URL.match(/.*code=.*/) ?
-        <Link to="/login/" > Hello </Link> : <Loading loadingState={this.state.loading} /> // Home com code e Home sem code
+        <HomePage /> : <MatchPage /> // Home com code e Home sem code
         }
       </>
     );
