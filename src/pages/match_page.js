@@ -8,6 +8,7 @@ import { accountGetGrant } from "../utils/handlerAccountAPI"
 import { makeStyles, withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
+import Polymer from '@material-ui/icons/Polymer';
 
 
 const useStyles = (theme) => ({
@@ -24,8 +25,7 @@ const useStyles = (theme) => ({
   },
   recipeView: {
     margin: "auto",
-    backgroundColor: "red"
-  }
+  },
 });
 
 class MatchPage extends React.Component {
@@ -44,7 +44,7 @@ class MatchPage extends React.Component {
       <>
       <Grid container 
       className={this.classes.root} 
-      spacing={8} 
+      spacing={2} 
       justify={"center"}
       alignContent={"center"}
       alignItems={"center"}
@@ -58,6 +58,14 @@ class MatchPage extends React.Component {
               </Grid>
             </Grid>
           </Paper>
+        </Grid>
+
+        <Grid item xs={12} md={2}>
+          <Grid container>
+            <Grid item className={this.classes.recipeView} >
+              <Polymer/>
+            </Grid>
+          </Grid>
         </Grid>
 
         <Grid item xs={12} md={5}>

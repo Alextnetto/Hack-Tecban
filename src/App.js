@@ -11,6 +11,7 @@ import './pages/login'
 import SignInSide from './pages/login';
 import HandlerHome from './pages/handleHomer'
 import Atms from './pages/atms'
+import CheckoutPage from "./pages/checkout"
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Switch>
         <Route path="/login" component={SignInSide} />
         <Route path="/atms" component={Atms} />
+        <Route path="/checkout" component={CheckoutPage} />
         <Route path="/">
           <HandlerHome />
         </Route>    

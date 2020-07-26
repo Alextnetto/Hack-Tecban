@@ -16,6 +16,9 @@ import ShareIcon from '@material-ui/icons/Share';
 import BlockIcon from '@material-ui/icons/BlockRounded'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
+import {
+  Link
+} from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -63,7 +66,9 @@ export default function RecipeReviewCard() {
       </CardContent>
       <CardActions disableSpacing>
         <IconButton aria-label="add to favorites">
-          <FavoriteIcon />
+          <Link to="/checkout" >
+             <FavoriteIcon />
+          </Link>
         </IconButton>
         <IconButton aria-label="share">
           <BlockIcon />
