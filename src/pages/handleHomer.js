@@ -10,9 +10,6 @@ import { accountGetGrant } from "../utils/handlerAccountAPI"
 class HandlerHome extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      loading: true,
-    };
   }
  
   render() {
