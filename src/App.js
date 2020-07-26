@@ -10,12 +10,14 @@ import {
 import './pages/login'
 import SignInSide from './pages/login';
 import HandlerHome from './pages/handleHomer'
+import Atms from './pages/atms'
 
 function App() {
   return (
     <Router>  
       <Switch>
         <Route path="/login" component={SignInSide} />
+        <Route path="/atms" component={Atms} />
         <Route path="/">
           <HandlerHome />
         </Route>    
