@@ -62,7 +62,7 @@ export default function RecipeReviewCardOne() {
       />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
-        Sou Rodrigo, casado e pai de 2 meninos lindos. Sou chef de cozinha amador, autoditada e estou em busca de investimento para um curso profissional de culinária.
+        Sou Ricardo, casado e pai de 2 meninos lindos. Sou chef de cozinha amador, autoditada e estou em busca de investimento para um curso profissional de culinária.
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
