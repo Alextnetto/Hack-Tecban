@@ -16,9 +16,9 @@ function Index() {
     <React.Fragment>
       <AppAppBar />
       <ProductHero />
-      <ProductValues />
-      <ProductCategories />
-      <ProductHowItWorks />
+      {/* <ProductValues /> */}
+      {/* <ProductCategories /> */}
+      {/* <ProductHowItWorks /> */}
       <ProductCTA />
       <ProductSmokingHero />
       <AppFooter />

@@ -87,23 +87,6 @@ export default function AppFooter() {
               className={classes.iconsWrapper}
               spacing={2}
             >
-              <Grid item className={classes.icons}>
-                <a href="https://material-ui.com/" className={classes.icon}>
-                  <img
-                    src="/static/themes/onepirate/appFooterFacebook.png"
-                    alt="Facebook"
-                  />
-                </a>
-                <a
-                  href="https://twitter.com/MaterialUI"
-                  className={classes.icon}
-                >
-                  <img
-                    src="/static/themes/onepirate/appFooterTwitter.png"
-                    alt="Twitter"
-                  />
-                </a>
-              </Grid>
               <Grid item>
                 <Copyright />
               </Grid>
@@ -139,35 +122,6 @@ export default function AppFooter() {
                 </option>
               ))}
             </TextField>
-          </Grid>
-          <Grid item>
-            <Typography variant="caption">
-              {'Icons made by '}
-              <Link
-                href="https://www.freepik.com"
-                rel="sponsored"
-                title="Freepik"
-              >
-                Freepik
-              </Link>
-              {' from '}
-              <Link
-                href="https://www.flaticon.com"
-                rel="sponsored"
-                title="Flaticon"
-              >
-                www.flaticon.com
-              </Link>
-              {' is licensed by '}
-              <Link
-                href="https://creativecommons.org/licenses/by/3.0/"
-                title="Creative Commons BY 3.0"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                CC 3.0 BY
-              </Link>
-            </Typography>
           </Grid>
         </Grid>
       </Container>

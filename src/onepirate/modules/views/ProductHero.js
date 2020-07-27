@@ -12,7 +12,7 @@ const backgroundImage =
 
 const styles = (theme) => ({
   background: {
-    backgroundImage: `url(${backgroundImage})`,
+    // backgroundImage: `url(${backgroundImage})`,
     backgroundColor: '#7fc7d9', // Average color of the background image.
     backgroundPosition: 'center',
   },
@@ -29,18 +29,25 @@ const styles = (theme) => ({
   more: {
     marginTop: theme.spacing(2),
   },
+  imgAds: {
+    width: "100vw",
+    height: "100vh",
+    position: "absolute",
+    top: "-10%"
+  }
 });
 
 function ProductHero(props) {
   const { classes } = props;
 
   return (
-    <ProductHeroLayout backgroundClassName={classes.background}>
-      {/* Increase the network loading priority of the background image. */}
+    <ProductHeroLayout >
+      Increase the network loading priority of the background image.
       <img
-        style={{ display: 'none' }}
-        src={backgroundImage}
+        // style={{ display: 'none' }}
+        src={ImageBack}
         alt="increase priority"
+        className={classes.imgAds}
       />
       <Typography color="inherit" align="center" variant="h2" marked="center">
         Upgrade your Sundays
