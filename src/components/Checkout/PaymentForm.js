@@ -9,7 +9,7 @@ export default function PaymentForm() {
   return (
     <React.Fragment>
       <Typography variant="h6" gutterBottom>
-        Invesitr
+        Investir
       </Typography>
       <Grid container spacing={3}>
         <Grid item xs={12}>
