@@ -1,16 +1,24 @@
 import React from 'react';
 import { GoogleMap, withScriptjs, withGoogleMap, Marker } from 'react-google-maps';
+var data = require('../assets/db.json')
 
-
+console.log(data)
 function RawMaps() {
     return (
         <GoogleMap 
             defaultZoom={14} 
-            defaultCenter={{lat: -27.5607012, lng: -48.5003837}}
-        >
-            <Marker position={{lat: -27.5607012, lng: -48.5003837}}/>
-            <Marker position={{lat: -27.546184, lng: -48.4996918}}/>
-            <Marker position={{lat: -27.556572, lng: -48.5004532}}/>
+            defaultCenter={{lat: -23.087428, lng: -47.205198}}
+        >   
+            {data.map( (atm, index) => (
+                <Marker 
+                    key={index}
+                    position={{
+                        lat: parseFloat(atm.coordinates.lat),
+                        lng: parseFloat(atm.coordinates.lng)
+                    }}
+                />
+                
+            ))};
         </GoogleMap>
     )
 }

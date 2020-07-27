@@ -4,7 +4,8 @@ import json
 def format(raw_data: list):
     data = []
 
-    for item in raw_data:
+    for i in range(11000):
+        item = raw_data[i]
         data.append(
             {
                 'nome': item['Location']['PostalAddress']['StreetName'],
@@ -15,7 +16,7 @@ def format(raw_data: list):
             }
         )
     
-    with open('db.json', '+w') as fin:
+    with open('./src/assets/db.json', '+w') as fin:
         fin.write(json.dumps(data, indent=4, ensure_ascii=False))
 
 
