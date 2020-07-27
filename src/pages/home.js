@@ -6,6 +6,8 @@ import {
 import { setUserStorage, getUserStorage, clearUserStorage } from "../utils/loginStorage"
 import { accountGetGrant } from "../utils/handlerAccountAPI"
 
+import Index from "../onepirate/Home"
+
 class HomePage extends React.Component {
   constructor(props) {
     super(props);
@@ -17,7 +19,8 @@ class HomePage extends React.Component {
   render() {
     return (
       <>
-        <Link to="/login/" > Hello </Link>
+        <Index />
+        <Link to="/login/" > Login </Link>
       </>
     );
   }

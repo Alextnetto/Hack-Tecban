@@ -17,7 +17,7 @@ class HandlerHome extends React.Component {
       <>
         {
         document.URL.match(/.*code=.*/) ?
-        <HomePage /> : <MatchPage /> // Home com code e Home sem code
+        <MatchPage /> : <HomePage /> // Home com code e Home sem code
         }
       </>
     );
