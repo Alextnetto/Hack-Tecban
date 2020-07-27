@@ -5,6 +5,9 @@ import { withStyles } from '@material-ui/core/styles';
 import Link from '@material-ui/core/Link';
 import AppBar from '../components/AppBar';
 import Toolbar, { styles as toolbarStyles } from '../components/Toolbar';
+import {
+  Link as LinkTo
+} from "react-router-dom";
 
 const styles = (theme) => ({
   title: {
@@ -53,15 +56,17 @@ function AppAppBar(props) {
             {'parApar'}
           </Link>
           <div className={classes.right}>
-            <Link
-              color="inherit"
-              variant="h6"
-              underline="none"
-              className={classes.rightLink}
-              href="/login"
-            >
-              {'Sign In'}
-            </Link>
+            <LinkTo to="/login">
+              <Link
+                color="inherit"
+                variant="h6"
+                underline="none"
+                className={classes.rightLink}
+                
+              >
+                {'Sign In'}
+              </Link>
+            </LinkTo>
             <Link
               variant="h6"
               underline="none"
