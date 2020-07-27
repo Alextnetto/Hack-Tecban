@@ -62,8 +62,7 @@ export default function RecipeReviewCardOne() {
       />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
-          This impressive paella is a perfect party dish and a fun meal to cook together with your
-          guests. Add 1 cup of frozen peas along with the mussels, if you like.
+        Sou Aline, publicitária, moro em São Paulo. Sempre ouvi em casa que o conhecimento é a única coisa que não tiram de você e por isso, estou a procura de investimentos em pessoas que querem estudar.
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
@@ -86,7 +85,7 @@ export default function RecipeReviewCardOne() {
           <ExpandMoreIcon />
         </IconButton>
       </CardActions>
-      <Collapse in={expanded} timeout="auto" unmountOnExit>
+      {/* <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
           <Typography paragraph>Method:</Typography>
           <Typography paragraph>
@@ -112,7 +111,7 @@ export default function RecipeReviewCardOne() {
             Set aside off of the heat to let rest for 10 minutes, and then serve.
           </Typography>
         </CardContent>
-      </Collapse>
+      </Collapse> */}
     </Card>
   );
 }
