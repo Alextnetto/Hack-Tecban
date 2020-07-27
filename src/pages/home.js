@@ -20,7 +20,6 @@ class HomePage extends React.Component {
     return (
       <>
         <Index />
-        <Link to="/login/" > Login </Link>
       </>
     );
   }

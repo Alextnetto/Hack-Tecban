@@ -42,7 +42,6 @@ function ProductHero(props) {
 
   return (
     <ProductHeroLayout >
-      Increase the network loading priority of the background image.
       <img
         // style={{ display: 'none' }}
         src={ImageBack}
@@ -50,7 +49,6 @@ function ProductHero(props) {
         className={classes.imgAds}
       />
       <Typography color="inherit" align="center" variant="h2" marked="center">
-        Upgrade your Sundays
       </Typography>
       <Typography
         color="inherit"
@@ -58,7 +56,6 @@ function ProductHero(props) {
         variant="h5"
         className={classes.h5}
       >
-        Enjoy secret offers up to -70% off the best luxury hotels every Sunday.
       </Typography>
       <Button
         color="secondary"
@@ -68,10 +65,19 @@ function ProductHero(props) {
         component="a"
         href="/premium-themes/onepirate/sign-up/"
       >
-        Register
+        Registrar-se
+      </Button>
+      <Button
+        color="primary"
+        variant="contained"
+        size="large"
+        className={classes.button}
+        component="a"
+        href="/premium-themes/onepirate/sign-up/"
+      >
+        Logar-se
       </Button>
       <Typography variant="body2" color="inherit" className={classes.more}>
-        Discover the experience
       </Typography>
     </ProductHeroLayout>
   );

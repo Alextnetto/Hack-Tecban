@@ -10,8 +10,8 @@ function Copyright() {
   return (
     <React.Fragment>
       {'© '}
-      <Link color="inherit" href="https://material-ui.com/">
-        Your Website
+      <Link color="inherit" href="#">
+        parApar
       </Link>{' '}
       {new Date().getFullYear()}
     </React.Fragment>
@@ -63,12 +63,12 @@ const useStyles = makeStyles((theme) => ({
 
 const LANGUAGES = [
   {
-    code: 'en-US',
-    name: 'English',
+    code: 'pt-BR',
+    name: 'Portugues',
   },
   {
-    code: 'fr-FR',
-    name: 'Français',
+    code: 'en',
+    name: 'English',
   },
 ];
 
@@ -98,16 +98,16 @@ export default function AppFooter() {
             </Typography>
             <ul className={classes.list}>
               <li className={classes.listItem}>
-                <Link href="/premium-themes/onepirate/terms/">Terms</Link>
+                <Link href="/premium-themes/onepirate/terms/">Termos</Link>
               </li>
               <li className={classes.listItem}>
-                <Link href="/premium-themes/onepirate/privacy/">Privacy</Link>
+                <Link href="/premium-themes/onepirate/privacy/">Privacidade</Link>
               </li>
             </ul>
           </Grid>
           <Grid item xs={6} sm={8} md={4}>
             <Typography variant="h6" marked="left" gutterBottom>
-              Language
+              Linguagem
             </Typography>
             <TextField
               select
