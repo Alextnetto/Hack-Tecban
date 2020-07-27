@@ -63,9 +63,9 @@ function ProductHero(props) {
         size="large"
         className={classes.button}
         component="a"
-        href="/premium-themes/onepirate/sign-up/"
+        href="/atms/"
       >
-        Registrar-se
+        Localizar Banco24Horas
       </Button>
       <Button
         color="primary"
@@ -73,7 +73,7 @@ function ProductHero(props) {
         size="large"
         className={classes.button}
         component="a"
-        href="/premium-themes/onepirate/sign-up/"
+        href="/login"
       >
         Logar-se
       </Button>
