@@ -20,6 +20,8 @@ import {
   Link
 } from "react-router-dom";
 
+import personImage from "./person_normally2.jpeg"
+
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 345,
@@ -43,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function RecipeReviewCard() {
+export default function RecipeReviewCardOne() {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
 
@@ -55,7 +57,7 @@ export default function RecipeReviewCard() {
     <Card className={classes.root}>
       <CardMedia
         className={classes.media}
-        image="/static/images/cards/paella.jpg"
+        image={personImage}
         title="Paella dish"
       />
       <CardContent>
