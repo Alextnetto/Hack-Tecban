@@ -4,6 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Button from '../components/Button';
 import Typography from '../components/Typography';
 import ProductHeroLayout from './ProductHeroLayout';
+import { Link } from 'react-router-dom'
 
 import ImageBack from "./13.jpg"
 
@@ -63,9 +64,9 @@ function ProductHero(props) {
         size="large"
         className={classes.button}
         component="a"
-        href="/atms/"
       >
-        Localizar Banco24Horas
+        <Link to='/atms/'>Localizar Banco24Horas</Link>
+        
       </Button>
       <Button
         color="primary"
@@ -73,9 +74,8 @@ function ProductHero(props) {
         size="large"
         className={classes.button}
         component="a"
-        href="/login"
       >
-        Logar-se
+        <Link to='/login'>Logar-se</Link>
       </Button>
       <Typography variant="body2" color="inherit" className={classes.more}>
       </Typography>
